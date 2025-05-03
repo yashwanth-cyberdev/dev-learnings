@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(80, 80, 80);
+  color: white;
+  align-items: center;
+  font-weight: 600;
+  padding-inline: 50px;
+  padding-block: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo img {
+  border-radius: 30px;
+}
+
+.nav-links a {
+  color: white;
+  margin-inline: 10px;
+  font-size: small;
+  text-decoration: none;
+  border: 1px solid rgb(80, 80, 80);
+  padding: 5px;
+}
+
+.nav-links a:hover {
+  color: orangered;
+  background-color: black;
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+
+.hero {
+  position: relative;
+  background-image: url("./assets/chaigym.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  min-height: 90vh;
+  /* overflow: hidden; Just in case */
+  /* background-color: black; */
+  /* filter: brightness(90%); */
+}
+
+.hero-content {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 300%;
+  font-weight: 700;
+}
+
+.hero-content p {
+  color: white;
+}
+
+.cta-button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: orangered;
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.cta-button:hover {
+  background-color: black;
+  color: red;
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  z-index: 1; /* Put behind text */
+}
+
+.hero-content,
+.features {
+  position: relative;
+  z-index: 2;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  padding-block: 40px;
+  margin-inline: 30px;
+  border-radius: 30px;
+}
+
+.feature {
+  border: 2px solid orangered;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 5px;
+  padding-block: 15px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.feature h3 {
+  color: orangered;
+}
+
+.feature p {
+  font-size: small;
+}
+
+.feature:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
