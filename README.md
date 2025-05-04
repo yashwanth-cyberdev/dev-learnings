@@ -6,3 +6,4 @@ My place to learn, break things, build stuff, and document my progress in softwa
 
 - **HTML5**
 - **CSS3** (Flexbox/Grid/Animations)
+- **JavaScript**
