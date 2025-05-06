@@ -12,18 +12,36 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 50px;
+  padding-block: 15px;
+  align-items: center;
+
   /* Define header styles here */
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: #6f4e37;
+  font-weight: 600;
+  font-size: large;
+
   /* Define logo styles here */
 }
 
 .logo img {
+  border: 2px solid #6f4e37;
+  border-radius: 25px;
   /* Define image styles within the logo here */
 }
 
 .nav-menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: #6f4e37;
   /* Define navigation link styles here */
 }
 
@@ -32,38 +50,76 @@ body {
 }
 
 .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/chaipatti.png");
+  width: 100%;
+  background-size: cover;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   /* Define hero section styles here */
 }
 
 .hero-text h1 {
+  font-size: 55px;
+  color: white;
+  font-weight: 600;
   /* Define styles for h1 in hero-text here */
 }
 
 .hero-text p {
+  color: white;
+  margin-block: 20px;
   /* Define styles for paragraph in hero-text here */
 }
 
 .shop-button {
+  border: 2px solid #6f4e37;
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 20px;
+  color: white;
+  background-image: linear-gradient(to right, #6f4e37, gold);
+  font-weight: 500;
   /* Define shop button styles here */
 }
 
 .shop-button:hover {
+  cursor: pointer;
   /* Define hover styles for shop button here */
 }
 
 .tea-collection {
+  margin-block: 30px;
+  margin-inline: 250px;
   /* Define tea collection section styles here */
 }
 
 .tea-collection h2 {
+  text-align: center;
   /* Define styles for h2 in tea collection here */
 }
 
 .tea-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px;
+
   /* Define tea cards container styles here */
 }
 
 .tea-card {
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  border: 2px solid black;
   /* Define styles for each tea card here */
 }
 
