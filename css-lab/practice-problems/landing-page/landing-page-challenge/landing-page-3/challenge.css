@@ -46,6 +46,9 @@ body {
 }
 
 .nav-menu a:hover {
+  background-color: #6f4e37;
+  color: white;
+  font-weight: 500;
   /* Define hover styles for navigation links here */
 }
 
@@ -84,7 +87,7 @@ body {
   padding-block: 10px;
   border-radius: 20px;
   color: white;
-  background-image: linear-gradient(to right, #6f4e37, gold);
+  background-image: linear-gradient(to right, #6f4e37, #bc7b3b);
   font-weight: 500;
   /* Define shop button styles here */
 }
@@ -96,12 +99,16 @@ body {
 
 .tea-collection {
   margin-block: 30px;
-  margin-inline: 250px;
+  margin-inline: 200px;
+
   /* Define tea collection section styles here */
 }
 
 .tea-collection h2 {
+  margin-bottom: 30px;
   text-align: center;
+  font-size: xx-large;
+  color: #6f4e37;
   /* Define styles for h2 in tea collection here */
 }
 
@@ -109,7 +116,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 30px;
+  align-items: center;
+  column-gap: 60px;
+  row-gap: 100px;
 
   /* Define tea cards container styles here */
 }
@@ -117,16 +126,29 @@ body {
 .tea-card {
   text-align: center;
   height: 200px;
-  width: 200px;
+  width: 250px;
   padding: 20px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px #aaaaaa;
+  /* transition: 0.3s ease-in-out; */
+
   /* Define styles for each tea card here */
 }
 
 .tea-card h3 {
+  color: #6f4e37;
   /* Define styles for tea card headings here */
 }
 
 .tea-card p {
+  margin-top: 5px;
+  font-style: italic;
   /* Define styles for tea card paragraph text here */
+}
+
+.tea-card:hover {
+  transform: scale(1.1);
+  transition: all 1s ease;
+  cursor: pointer;
 }
